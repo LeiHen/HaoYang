@@ -7,19 +7,251 @@ body{
 }
 
 a:link,a:visited,a:hover,a:active{
+	text-decoration: none;
+	color: #fff;
+}
+
+.w{
+	width: 992px;
+	margin: 0 auto;
+}
+.w_max{
+	max-width: 1400px;
+}
+.w_min{
+	min-width: 992px;
+}
+
+.header,
+.content,
+.footer{
+	
+}
+
+
+.header{
 
 }
+.content{
+
+}
+.footer{
+	
+}
+
+
+/* 
+	布局（grid）
+*/
+
+
+
+
+
+/* 
+	元件（unit）
+*/
+
+
+/* 返回顶部 */
+.u_totop{
+
+}
+
+
+
+
+
+
+/* 
+	模块（module） 
+*/
+
+
+/* 友情链接 */
+.m_friendlink{
+
+}
+.m_friendlink .title{
+
+}
+.m_friendlink .link{
+
+}
+
+
+
+
+
+
+
+/* 通用  */
+
+/* head */
+.header{
+	height: 150px;
+}
+.header .logo{
+	display: inline-block;
+	+display: inline;
+	+zoom: 1;
+	padding: 30px 0 0 0; 
+}
+.header .logo .img{
+	max-height: 110px;
+}
+
+.header .title{
+	display: inline-block;
+	+display: inline;
+	+zoom: 1;
+	vertical-align: top;
+	padding:80px 0 0 50px; 
+
+	font-size: 3em;
+	/*line-height:em;*/
+	font-style: italic;
+	font-weight: bold;
+	color: #362715;
+}
+
+.header .hot_line{
+	display:block;
+	padding:74px 0 0 50px; 
+
+	color: #874603;
+	font-size: 1.8em;
+	line-height: 1.4em;
+	/*vertical-align: top;*/
+	float: right;
+	
+}
+
+
+/* foot */
+.footer{
+	color: #fff;
+}
+
+.footer .foot_t{
+	background: #362715;
+	overflow: hidden;
+}
+.footer .foot_t .w{
+	background: url(../images/bg_footer_info.png) no-repeat right center;
+}
+
+.footer .foot_t .QR{
+	position: relative;
+	display: inline-block;
+	+display: inline;
+	+zoom: 1;
+	width: 150px;
+	height: 150px;
+	margin: 50px 0;
+}
+.footer .foot_t .QR .img{
+	display: block;
+	width: 100%;
+}
+.footer .foot_t .QR .title{
+	position: absolute;
+	text-align: center;
+	width: 100%;
+	padding:10px 0;
+	font-size: 1.2em;
+	line-height: 1.4em;
+}
+
+.footer .foot_t .hot_line{
+	display: inline-block;
+}
+
+.footer .foot_b{
+	background: #251a0b;
+}
+
+.footer .foot_b .info{
+
+}
+
+.footer .foot_b .info .logo{
+
+}
+.footer .foot_b .info .logo .img{
+
+}
+
+.footer .foot_b .info .list{
+
+}
+.footer .foot_b .info .list .title{
+
+}
+
+.footer .foot_b .info .name{
+
+}
+
+
+/* nav */
+.nav_mian{
+	height: 40px;
+	background: #362715;
+}
+.nav_mian .ul{
+	text-align: right;
+}
+.nav_mian .ul .list{
+	display: inline-block;
+	background: url(../images/bg_nav.png) no-repeat left center;
+}
+.nav_mian .ul .list .link{
+	display: block;
+	padding:0 30px;
+	margin: 0 0 0 4px;
+	line-height: 40px;
+	font-size: 1.8em;
+	color: #fff;
+}
+.nav_mian .ul .list:first-child{
+	background: none;
+}
+.nav_mian .ul .list .link:hover
+.nav_mian .ul .list .hover{
+	background: #874603;
+}
+
+
+
+
+/* css3动画 */
+.nav_mian .ul .list .link{
+	-webkit-transition:all .4s ease-out;
+	-moz-transition:all .4s ease-out;
+	-ms-transition:all .4s ease-out;
+	-o-transition:all .4s ease-out;
+	transition:all .4s ease-out;
+}
+
+
+
 
 /*
 
 	全局
 	
-	  	  主色
+	  	  主色 250101
 	 	  辅色 
     	高亮色
     	阴影色
     	点睛色
     	背景色
+
+    	深褐色 251a0b
+    	  褐色 362715
+    	浅褐色 874603
+
 
 	  字体颜色 
 
@@ -39,5 +271,29 @@ a:link,a:visited,a:hover,a:active{
 
 		  边距
 		内填充
+
+*/
+
+
+/*
+
+布局（grid）（.g-）：
+将页面分割为几个大块，通常有头部、主体、主栏、侧栏、尾部等！
+
+模块（module）（.m-）：
+通常是一个语义化的可以重复使用的较大的整体！比如导航、登录、注册、各种列表、评论、搜索等！
+
+元件（unit）（.u-）：
+通常是一个不可再分的较为小巧的个体，通常被重复用于各种模块中！比如按钮、输入框、loading、图标等！
+
+功能（function）（.f-）：
+为方便一些常用样式的使用，我们将这些使用率较高的样式剥离出来，按需使用，通常这些选择器具有固定样式表现，比如清除浮动等！不可滥用！
+
+皮肤（skin）（.s-）：
+如果你需要把皮肤型的样式抽离出来，通常为文字色、背景色（图）、边框色等，非换肤型网站通常只提取文字色！非换肤型网站不可滥用此类！
+
+状态（.z-）：
+为状态类样式加入前缀，统一标识，方便识别，她只能组合使用或作为后代出现（.u-ipt.z-dis{}，.m-list li.z-sel{}），具体详见命名规则的扩展相关项。
+
 
 */
