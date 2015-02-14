@@ -46,7 +46,7 @@
                     服务热线
                     <br>
                     020 81619665
-                </a> 
+                </a>
             </div>
 		</header>
 		<!-- header ]] -->
@@ -66,42 +66,38 @@
         <!-- nav ]] -->
         
         <!-- banner [[ -->
-        <div class="m_banner m_banner_index w">
-            <ul class="content">
-                <li class="list">
-                    <img src="images/banner/index/img_01_992x340.jpg" alt="" class="img">
-                </li>
-                <li class="list">
-                    <img src="images/banner/index/img_02_992x340.jpg" alt="" class="img">
-                </li>
-                <li class="list">
-                    <img src="images/banner/index/img_03_992x340.jpg" alt="" class="img">
-                </li>
-                <li class="list">
-                    <img src="images/banner/index/img_04_992x340.jpg" alt="" class="img">
-                </li>
-                <li class="list">
-                    <img src="images/banner/index/img_05_992x340.jpg" alt="" class="img">
-                </li>
-            </ul>
-            <ul class="menu">
-                <li class="list"></li>
-                <li class="list"></li>
-                <li class="list"></li>
-                <li class="list"></li>
-                <li class="list"></li>
-            </ul>
+        <div class="m_banner m_banner_sub w">
+            <img src="images/banner/sub/contact_992x260.jpg" alt="" class="img">
         </div>
         <!-- banner ]] -->
         
         <!-- content [[ -->
-        <div class="content w">
-            <div class="state"></div>
+        <div class="content w contact">
+           <h2 class="u_title"><span class="title">联系方式</span></h2>
+           
+           <div class="map" id="dituContent"></div>
+           
+           <ul class="contact_info">
+               <li><span class="title">地&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;址：</span>
+                   中国广东省广州市荔湾区华贵路1号贵贤上品A5栋1504室
+               </li>
+               <li><span class="title">邮&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;编：</span>510140</li>
+               <li><span class="title">电&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;话：</span>+86 20 81619665</li>
+               <li><span class="title">电子邮箱：</span>
+                   hynextgen@163.com （项目）<br>
+                   hynextgen1@163.com（出国）
+               </li>
+               <li><span class="title">企业微信：</span>GRANDVISTA</li>
+           </ul>
+           
+           
+           
         </div>
         <!-- content ]] -->
-        
+    
         
         <!-- top [[ -->
+<!--
         <a class="u_totop" href="#">
             &#94;
             <br>
@@ -109,6 +105,7 @@
             <br>
             回到顶部
         </a>
+-->
         <!-- top ]] -->
         
         
@@ -174,9 +171,9 @@
         <!-- footer ]] -->
         
        
-       
+        <script src="http://api.map.baidu.com/api?key=&v=1.1&services=true"></script>
+        
         <script src="http://libs.baidu.com/jquery/1.10.2/jquery.min.js"></script>
-<!--        <script src="http://libs.baidu.com/jqueryui/1.10.2/jquery-ui.min.js "></script>-->
         
         <script src="js/base.js"></script>
         <script src="js/common.js"></script>
@@ -185,7 +182,8 @@
 		<script type="text/javascript">	
 			//初始化 统一入口
 			function init(){
-
+                //创建和初始化地图
+                initMap();
 			}
 			init();
 		</script>

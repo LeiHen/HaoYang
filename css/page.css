@@ -1,1 +1,42 @@
 @charset "utf-8";
+
+/* 公司简介 */
+.introduction{
+
+}
+
+/* 核心团队 */
+.team{
+
+}
+
+/* 最新活动 */
+.activity{
+
+}
+
+/* 联系方式 */
+.contact{
+
+}
+.contact .contact_info{
+
+}
+.contact .contact_info li{
+	font-size: 1.6em;
+	line-height: 2em;
+	position: relative;
+	/*padding-left: 90px;*/
+	padding: 4px 0 4px 90px;
+}
+.contact .contact_info li .title{
+	position: absolute;
+	left: 0;
+}
+
+
+/* 地图 */
+.map{
+	height: 300px;
+	margin: 10px auto;
+}
