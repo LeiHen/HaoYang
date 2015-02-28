@@ -16,27 +16,170 @@
 }
 
 /* 联系方式 */
-.contact{
+.contact{ }
+.contact .contact_info{ }
+.contact .contact_info li{ font-size: 1.6em; line-height: 2em; position: relative; padding: 4px 0 4px 90px; }
+.contact .contact_info li .title{ position: absolute; left: 0; }
 
-}
-.contact .contact_info{
 
-}
-.contact .contact_info li{
-	font-size: 1.6em;
-	line-height: 2em;
-	position: relative;
-	/*padding-left: 90px;*/
-	padding: 4px 0 4px 90px;
-}
-.contact .contact_info li .title{
-	position: absolute;
-	left: 0;
+/* 文章详细 */
+.activity_detail{
+
 }
 
 
 /* 地图 */
-.map{
-	height: 300px;
-	margin: 10px auto;
+.map{ height: 300px; margin: 10px auto; }
+
+/* 合作伙伴 */
+.cooperation{ margin: 20px 0 80px 0; }
+.cooperation .content{ overflow: hidden; }
+.cooperation .link{ }
+.cooperation .link .img{ display: block; }
+.cooperation .link .title{ font-size: 1.4em; line-height: 2em; text-align: center; color: #0e0e0e; }
+
+/* 昊十洋杂志 */
+.magazine{ }
+.magazine .cover{ display: inline-block;}
+.magazine .QR{ max-width: 150px; display: inline-block; margin:20px 0 0 120px; }
+.magazine .QR .title{ text-align:center; }
+
+
+/* 推荐项目 */
+.recommend_project{ }
+.recommend_project .item{ overflow: hidden; margin: 20px auto; }
+.recommend_project .item .item_li{ float: left; display: block; margin: 0 0 0 38px; }
+.recommend_project .item .item_li:first-child{ margin: 0 0 0 0; }
+.recommend_project .item .item_li .img_wrap{ overflow: hidden; width: 168px; height: 94px; display: block; }
+.recommend_project .item .item_li .img{ width: 168px; height: 94px; display: block; }
+.recommend_project .item .item_li .title{ text-align: center; font-size: 1.4em; line-height: 2em; color: #0e0e0e; }
+.recommend_project .item .item_li:hover{ background:#362715; }
+.recommend_project .item .item_li:hover .title{ color: #fff; }
+.recommend_project .item .item_li:hover .img{ -webkit-transform:scale(1.04); -moz-transform:scale(1.04); -ms-transform:scale(1.04); -o-transform:scale(1.04); transform:scale(1.04); }
+
+/* 移民项目简介 */
+.immigrant{ }
+.immigrant .g_itme_imgtxt{ margin: 10px auto; }
+
+/* 优势项目简介 */
+.advantage_project{ }
+.advantage_project .g_itme_imgtxt{ margin: 10px auto; }
+.advantage_project .m_itme_imgtxt{ }
+.advantage_project .m_itme_imgtxt .txt{ }
+.advantage_project .m_itme_imgtxt .txt .list{ list-style-type: decimal; margin: 0 0 0 2em; font-size: 1em; line-height: 2em; }
+
+/* 国家项目 */
+.project{ margin: 50px  auto; }
+.project .state{ overflow: hidden; margin: 10px auto; }
+.project .state .list{ width: 8.3333333%; float: left; cursor: pointer; }
+.project .state .list .state_img{ display: block; width: 52px; height: 52px; margin: 0 auto; background: url(../images/spirit_state.png) no-repeat 0 -5000px; overflow: hidden; }
+.project .state .list .title{ text-align: center; color: #251a0b; font-size: 1.4em; line-height: 2em; }
+
+.project .state .list_01 .state_img{ background-position: 0px 0px; }
+.project .state .list_02 .state_img{ background-position: 0px -52px; }
+.project .state .list_03 .state_img{ background-position: 0px -104px; }
+.project .state .list_04 .state_img{ background-position: 0px -156px; }
+.project .state .list_05 .state_img{ background-position: 0px -208px; }
+.project .state .list_06 .state_img{ background-position: 0px -260px; }
+.project .state .list_07 .state_img{ background-position: 0px -312px; }
+.project .state .list_08 .state_img{ background-position: 0px -364px; }
+.project .state .list_09 .state_img{ background-position: 0px -416px; }
+.project .state .list_10 .state_img{ background-position: 0px -468px; }
+.project .state .list_11 .state_img{ background-position: 0px -520px; }
+.project .state .list_12 .state_img{ background-position: 0px -572px; }
+
+.project .state .list:hover{ }
+.project .state .list:hover .state_img{ -webkit-transform:translate(0,6px); -moz-transform:translate(0,6px); -ms-transform:translate(0,6px); -o-transform:translate(0,6px); transform:translate(0,6px); }
+.project .state .list:hover .title{ color: #362715; }
+
+.project .info{ width: 992px; height: 265px; overflow: hidden; }
+.project .info .list{ width: 992px; height: 265px; }
+.project .info .list .g_itme_imgtxt{ overflow: hidden; margin: 20px auto; height: 212px; }
+.project .info .list .g_itme_imgtxt .img_wrap{ width: 38.2%; }
+.project .info .list .g_itme_imgtxt .img_wrap .img{ min-width: 100%; max-width:100%; display: block; }
+.project .info .list .g_itme_imgtxt .txt{ width: 57.8%; }
+.project .info .list .g_itme_imgtxt .txt .title{ font-size: 1.8em; line-height: 2em; color: #362715; }
+.project .info .list .g_itme_imgtxt .txt .detail{ font-size: 1.4em; line-height: 1.8em; }
+.project .info .list .g_itme_imgtxt .txt .detail p{ text-indent: 2em; margin: 10px auto; }
+
+
+
+
+
+/* i */
+.index_lists{
+
 }
+.index_lists .lists_list{
+	padding-top: 40px;
+}
+.index_lists .lists_list .m_list_t{
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+
+
+
+
+
+
+/* css3动画 */
+.nav_mian .ul .list .link,
+.m_page ul li a,
+.m_article .list .link,
+.m_article .list .link .img,
+.m_tb_piece .btn,
+.u_title .btn_more,
+.m_list_t .list .link .wire,
+.recommend_project .item .item_li,
+.recommend_project .item .item_li .title,
+.recommend_project .item .item_li .img,
+.project .state .list .state_img,
+.m_banner .menu .list,
+.m_banner .menu .hover{
+	-webkit-transition:all .4s ease-out;
+	-moz-transition:all .4s ease-out;
+	-ms-transition:all .4s ease-out;
+	-o-transition:all .4s ease-out;
+	transition:all .4s ease-out;
+}
+
+
+
+/*
+
+	全局
+	
+	  	  主色 250101
+	 	  辅色 
+    	高亮色
+    	阴影色
+    	点睛色
+    	背景色
+
+    	深褐色 251a0b
+    	  褐色 362715
+    	浅褐色 874603
+
+
+	  字体颜色 0e0e0e
+
+	主标题颜色 
+	副标题颜色 
+	  正文颜色 
+	
+	  过渡颜色
+
+	主标题大小 
+	副标题大小 
+	  正文大小 14px
+
+	主标题行高 
+	副标题行高 
+	  正文行高 
+
+		  边距
+		内填充
+
+*/

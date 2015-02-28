@@ -98,6 +98,124 @@ function createIcon(json){
 
 
 /**
+* @name		:tabBox
+* @author	:Nice
+* @dependent:描述
+*/
+function tabBox(ID,time){
+    var e=$("#"+ID);
+    var menu=e.find('.menu');
+    var menuLi=menu.find('.list');
+
+    var info=e.find('.info');
+    var infoLi=info.find('.list');
+
+    //初始化
+    
+
+    menuLi.click(function(event) {
+        var i=$(this).index();
+        
+        infoLi.stop().animate({
+            opacity:0
+        }, time)
+
+
+        setTimeout(function(){
+            infoLi.css({
+                display: 'none'
+            });
+
+            $(infoLi[i]).css({
+                display: 'block'
+            });
+
+            $(infoLi[i]).stop().animate({
+                opacity:1
+            }, time)
+            console.log(infoLi[i]);
+        },time);
+        
+    });
+}
+/* @end **/
+
+
+/**
+* @name     :tabBanner
+* @author   :Nice
+* @dependent:
+*/
+function tabBanner(ID,time,interval){
+    var e=$("#"+ID);
+    var tabContent=e.find('.tab_content');
+    var imgWrap=e.find('.img_wrap');
+    var imgLi=imgWrap.find('.list');
+    var imgLiIMG=imgLi.find('.img');
+
+    var tabContentW=tabContent.width();
+    var imgL=imgLiIMG.length;
+
+    var IMGI=0;
+
+
+    //初始化
+
+    //添加menu
+    var menuLiHTML='';
+    for (var i = 0; i <= imgL-1; i++) {
+        menuLiHTML=menuLiHTML+'<li class="list"></li>';
+    };
+    e.append('<ul class="menu">'+menuLiHTML+'</ul>')
+
+    imgWrap.width(imgL*tabContentW);
+    imgLi.width(tabContentW);
+
+    var menu=e.find('.menu');
+    var menuLi=menu.find('.list');
+    $(menuLi[0]).addClass('hover');
+
+    setInterval(function(){
+        IMGI=IMGI+1;
+        if (IMGI>=imgL) {
+            IMGI=0;
+        }
+        
+        imgWrap.stop().animate({
+            left:-IMGI*tabContentW
+        }, time);
+
+        menuLi.removeClass('hover');
+        $(menuLi[IMGI]).addClass('hover');
+
+        // console.log(IMGI);
+    },interval);
+    
+    menuLi.click(function(event) {
+        var IMGI=$(this).index();
+
+        imgWrap.stop().animate({
+            left:-IMGI*tabContentW
+        }, time);
+
+        menuLi.removeClass('hover');
+        $(menuLi[IMGI]).addClass('hover');
+    });
+
+
+
+
+
+
+    // var menu=
+
+}
+/* @end **/
+
+
+
+
+/**
 * @name		:mianInit
 * @author	:Nice
 * @dependent:总初始化
@@ -110,6 +228,10 @@ mianInit();
 
 
 
+
+
+
+
 /**
 * @name		:名称
 * @author	:作者
@@ -117,6 +239,8 @@ mianInit();
 */
 
 /* @end **/
+
+
 
 /**
 * @name		:
